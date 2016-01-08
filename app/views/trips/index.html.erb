@@ -1,1 +1,10 @@
-<h1>trips#index</h1>
+<h1>Your Trips:</h1>
+<h2>trip#index</h2>
+
+<ul>
+  <% @trips.each do |trip| %>
+    <li>
+      <%= trip.name %>
+    </li>
+  <% end %>
+</ul>
