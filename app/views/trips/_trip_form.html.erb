@@ -1,0 +1,16 @@
+<%= form_for @trips do |f| %>
+  <fieldset>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= date_select(:trip, :start) %>
+    </div>
+    <div>
+      <%= date_select(:trip, :end) %>
+    </div>
+  </fieldset>
+
+  <%= submit_tag("Create Trip") %>
+<% end %>

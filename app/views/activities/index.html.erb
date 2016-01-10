@@ -1,0 +1,14 @@
+<h1 style="color: red"><strong>activities#index</strong></h1>
+<br>
+
+<table border="1">
+<th>Name</th><th>Date</th><th>Description</th><th>Location</th>
+<% @activities.each do |activity| %>
+  <tr>
+    <td> <%= activity.name %> </td>
+    <td> <%= activity.date %> </td>
+    <td> <%= activity.description %> </td>
+    <td> <%= activity.location %> </td>
+  </tr>
+<% end %>
+</table>

@@ -6,20 +6,28 @@ class TripsController < ApplicationController
   end
 
   def new
-    @trips = current_user.new
+    @trips = Trip.new
   end
 
   def create
-    @trips = current_user.new(create_params)
+    @trip = current_user.trips.build create_trip_params
+
+    if @trip.save
+      flash[:notice] = "Trip created!"
+      redirect_to trip_path(@trip)
+    else
+      flash.now[:alert] = "An error occurred"
+    end
   end
 
   def show
+    @trip = Trip.find(params[:id])
   end
 
 
   private
 
-  def create_params
+  def create_trip_params
     params.require(:trip).permit(:name)
   end
 

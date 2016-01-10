@@ -1,10 +1,13 @@
-<h1>Your Trips:</h1>
-<h2>trip#index</h2>
+<h1 style="color: red"><strong>trips#index</strong></h1>
+<br>
+<h1>Your Trips</h1>
+
+<%= link_to "Add New Trip", new_trip_path %>
 
 <ul>
   <% @trips.each do |trip| %>
     <li>
-      <%= trip.name %>
+      <%= link_to trip.name, :controller => :activities, :action => :index %>
     </li>
   <% end %>
 </ul>
