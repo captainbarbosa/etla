@@ -26,6 +26,9 @@ class ActivitiesController < ApplicationController
     @activity = Activity.find(params[:id])
   end
 
+  def update
+  end
+
   def destroy
     @trip = Trip.find(params[:trip_id])
     @activity = @trip.activities.find(params[:id])
