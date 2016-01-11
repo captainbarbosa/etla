@@ -24,6 +24,20 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
   end
 
+  def edit
+    @trip = Trip.find(params[:id])
+  end
+
+  def update
+    @trip = Trip.find(params[:id])
+
+    if @trip.update(create_trip_params)
+      redirect_to @trip, :notice => "Trip edited"
+    else
+      render 'edit'
+    end
+  end
+
   def destroy
     @trip = Trip.find(params[:id])
     @trip.destroy
