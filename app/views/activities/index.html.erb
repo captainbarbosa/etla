@@ -1,6 +1,8 @@
 <h1 style="color: red"><strong>activities#index</strong></h1>
 <br>
 
+<%= link_to "Add New Activity", new_activity_path %>
+
 <table border="1">
 <th>Name</th><th>Date</th><th>Description</th><th>Location</th>
 <% @activities.each do |activity| %>
@@ -12,3 +14,5 @@
   </tr>
 <% end %>
 </table>
+
+<%= link_to "Back to trips", trips_path %>

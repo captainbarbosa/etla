@@ -14,7 +14,7 @@ class TripsController < ApplicationController
 
     if @trip.save
       flash[:notice] = "Trip created!"
-      redirect_to trip_path(@trip)
+      redirect_to trip_path(:id)
     else
       flash.now[:alert] = "An error occurred"
     end
@@ -28,7 +28,7 @@ class TripsController < ApplicationController
   private
 
   def create_trip_params
-    params.require(:trip).permit(:name)
+    params.require(:trip).permit(:name, :start, :end)
   end
 
 end

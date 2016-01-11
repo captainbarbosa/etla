@@ -6,11 +6,20 @@ class ActivitiesController < ApplicationController
   end
 
   def new
+    @trip = Trip.find(params[:trip_id])
     @activities = Activity.new
   end
 
   def create
-    @activity = current_user.activities.build create_activity_params
+    @trip = Trip.find(params[:trip_id])
+    @activity = @activity.build(params[:activity], create_activity_params)
+
+    if @activity.save
+      flash[:notice] = "Activity created!"
+      redirect_to activity_path(:id)
+    else
+      flash.now[:alert] = "An error occurred"
+    end
   end
 
   def show
@@ -21,7 +30,7 @@ class ActivitiesController < ApplicationController
   private
 
   def create_activity_params
-    params.require(:activity).permit(:name)
+    params.require(:activity).permit(:name, :date, :description, :location)
   end
   # def create
   #   activity = Activity.new(activity_params)
