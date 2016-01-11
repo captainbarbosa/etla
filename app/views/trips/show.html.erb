@@ -12,13 +12,14 @@
 <%= link_to "Add New Activity", new_trip_activity_path(@trip) %>
 
 <table border="1">
-<th>Name</th><th>Date</th><th>Description</th><th>Location</th>
+<th>Name</th><th>Date</th><th>Description</th><th>Location</th><th>Edit/Delete</th>
 <% @trip.activities.each do |activity| %>
   <tr>
     <td> <%= activity.name %> </td>
     <td> <%= activity.date %> </td>
     <td> <%= activity.description %> </td>
     <td> <%= activity.location %> </td>
+    <td> <%= link_to "Delete", [@trip, activity], :method  => :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -26,6 +26,13 @@ class ActivitiesController < ApplicationController
     @activity = Activity.find(params[:id])
   end
 
+  def destroy
+    @trip = Trip.find(params[:trip_id])
+    @activity = @trip.activities.find(params[:id])
+    @activity.destroy
+    redirect_to @trip, :notice => "Activity Deleted"
+  end
+
 
   private
 
