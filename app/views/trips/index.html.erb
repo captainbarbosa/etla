@@ -1,15 +1,37 @@
-<h1 style="color: red"><strong>trips#index</strong></h1>
-<br>
-<h1>Your Trips</h1>
+<div class="page-header">
+  <h1>Your Trips</h1>
+</div>
 
-<%= link_to "Add New Trip", new_trip_path %>
+<%= link_to new_trip_path do %>
+    <i class="glyphicon glyphicon-plus">Add New Trip</i>
+<% end %>
 
-<ul>
+<ul class="list-group">
   <% @trips.each do |trip| %>
     <li>
-      <%= link_to trip.name, trip %>  -
-      <%= link_to "Delete Trip", trip, method: 'delete' %> -
-      <%= link_to "Edit Trip", edit_trip_path(trip) %>
-    </li>
+      <li class="list-group-item">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <h2><%= link_to trip.name, trip %></h2>
+          </div>
+
+          <div class="panel-footer">
+            <%= trip.start.strftime("%B") %> <%= trip.start.strftime("%d") %> 
+            <%= link_to trip, method: 'delete' do %>
+              <i class="glyphicon glyphicon-trash"></i>
+            <% end %> 
+            <%= link_to edit_trip_path(trip) do %>
+              <i class="glyphicon glyphicon-pencil"></i>
+            <% end %>
+
+            <% activity_counts = Activity.group(:trip_id).count %>
+            <% activity_counts.each do |trip_id, count| %>
+              <p>Trip: <%= trip_id %></p>
+              <p>Count: <%= activity_counts[trip_id] %></p>
+            <% end %>
+
+          </div>
+      </li>
   <% end %>
 </ul>
+
