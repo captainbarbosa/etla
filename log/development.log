@@ -16012,3 +16012,1838 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.5ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 21:42:02 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (1.9ms)
+  Rendered activities/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for [@trip, @activity] do |f| %>
+    2:   <fieldset>
+    3:     <div>
+    4:       <%= f.hidden_field :trip_id , :value=>params[:trip_id] %>
+  app/views/activities/_activity_form.html.erb:1:in `_app_views_activities__activity_form_html_erb___2815527151842116456_70349177354340'
+  app/views/activities/new.html.erb:8:in `_app_views_activities_new_html_erb___2627265171008270259_70349173806720'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.9ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 22:35:27 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (28.0ms)
+  Rendered activities/new.html.erb within layouts/application (29.4ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 91ms (Views: 62.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 22:35:27 -0500
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 22:36:12 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (4.1ms)
+  Rendered activities/new.html.erb within layouts/application (5.3ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 31.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 22:36:12 -0500
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:37:17 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+ArgumentError (wrong number of arguments (2 for 0..1)):
+  app/controllers/activities_controller.rb:15:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.7ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:39:05 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
+
+ArgumentError (wrong number of arguments (2 for 0..1)):
+  app/controllers/activities_controller.rb:15:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:42:28 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:42:28.313470"], ["updated_at", "2016-01-11 03:42:28.313470"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 14.2ms)
+
+NoMethodError (undefined method `activity_path' for #<ActivitiesController:0x007ff6e24ea468>):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.0ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:54:53 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:54:53.784265"], ["updated_at", "2016-01-11 03:54:53.784265"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 3.4ms)
+
+NoMethodError (undefined method `trip_activity' for #<ActivitiesController:0x007ff6e205c158>):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:55:53 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:55:53.939304"], ["updated_at", "2016-01-11 03:55:53.939304"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 10.6ms)
+
+NameError (undefined local variable or method `trip_activity' for #<ActivitiesController:0x007ff6e4238d08>):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (115.0ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:56:14 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:56:14.718073"], ["updated_at", "2016-01-11 03:56:14.718073"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 11.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"activities", :id=>nil, :trip_id=>:id} missing required keys: [:id]):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:56:32 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:56:32.549734"], ["updated_at", "2016-01-11 03:56:32.549734"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 10.7ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"activities", :trip_id=>"1"} missing required keys: [:id]):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:57:18 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:57:18.550722"], ["updated_at", "2016-01-11 03:57:18.550722"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 10.6ms)
+
+NoMethodError (undefined method `activity_path' for #<ActivitiesController:0x007ff6de7245c0>):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.2ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 22:57:26 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRese8tq05dnfpuVXUAaI4wFOhTB4H9TOoZb26OQUWm6IqkY33Hdy6dA7UjTpHBIRcY4Z+QAlFDdx44107Bq7g==", "activity"=>{"trip_id"=>"1", "name"=>"Testing123", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"25", "description"=>"testtesttest", "location"=>"somewhere"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Testing123"], ["description", "testtesttest"], ["location", "somewhere"], ["date", "2016-05-25 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 03:57:26.717636"], ["updated_at", "2016-01-11 03:57:26.717636"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 10.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"activities", :id=>nil, :trip_id=>:trip_id} missing required keys: [:id]):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.7ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 22:58:11 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (2.9ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 22:59:45 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.6ms)
+  Rendered activities/new.html.erb within layouts/application (6.1ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 40.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:00:08 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kXwBshIamm2D2Mf96jz5NiwWpN1DH65HrUCqgp+3Esg2SQTRBgGUMUPmsSBk2JNd5dWmrmb/RURKAX9s75cpTw==", "activity"=>{"trip_id"=>"1", "name"=>"test456", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"26", "description"=>"testing some stuff", "location"=>"somewhere else"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "test456"], ["description", "testing some stuff"], ["location", "somewhere else"], ["date", "2016-05-26 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:00:08.763673"], ["updated_at", "2016-01-11 04:00:08.763673"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/trip_id
+Completed 302 Found in 14ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:00:08 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.6ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:00:47 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 19ms (ActiveRecord: 1.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.6ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:00:50 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.7ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:00:59 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 20ms (ActiveRecord: 1.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:01:03 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (5.5ms)
+  Rendered activities/new.html.erb within layouts/application (7.8ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 36.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:01:07 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (3.7ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:01:07 -0500
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:01:13 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.2ms)
+  Rendered activities/new.html.erb within layouts/application (4.5ms)
+  Rendered devise/_login_items.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:01:40 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.2ms)
+  Rendered activities/new.html.erb within layouts/application (4.6ms)
+  Rendered devise/_login_items.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:02:04 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"REIp5SpN4sqQDKD3ZA+JyuP1IwiZaTx4dwzBLd7kXdbjdyyGPlbsllAy1irq6+OhKjYhe7yJ13uQTRTDrsRmUQ==", "activity"=>{"trip_id"=>"1", "name"=>"test789", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"27", "description"=>"some other things", "location"=>"utah"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "test789"], ["description", "some other things"], ["location", "utah"], ["date", "2016-05-27 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:02:04.163152"], ["updated_at", "2016-01-11 04:02:04.163152"]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 19ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:02:04 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.5ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:02:58 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.6ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (3.4ms)
+  Rendered devise/_login_items.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:02:58 -0500
+
+
+Started GET "/trips" for ::1 at 2016-01-10 23:03:07 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?  [["user_id", 1]]
+  Rendered trips/index.html.erb within layouts/application (3.1ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/new" for ::1 at 2016-01-10 23:03:51 -0500
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered trips/_trip_form.html.erb (3.8ms)
+  Rendered trips/new.html.erb within layouts/application (5.9ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 40.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:03:55 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (15.0ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:03:56 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.0ms)
+  Rendered activities/new.html.erb within layouts/application (4.2ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:04:12 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gz8+32e9cZ1QYfkpOLdgKyoadBeE5bltZ6o3dnlytJ0kCju8c6Z/wZBfj/S2UwpA49l2ZKEFUm6A6+KYCVKPGg==", "activity"=>{"trip_id"=>"1", "name"=>"A", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"24", "description"=>"A", "location"=>"A"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "A"], ["description", "A"], ["location", "A"], ["date", "2016-05-24 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:04:12.031272"], ["updated_at", "2016-01-11 04:04:12.031272"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:04:12 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.0ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:06:18 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.0ms)
+  Rendered activities/new.html.erb within layouts/application (4.3ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 31.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:06:33 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wxu21/2SqLrm0AupgftdQhvxrBBs7fJFjZsWbNYkfB1kLrO06Ymm5ibufXQPHzcp0jKuY0kNGUZq2sOCpgRHmg==", "activity"=>{"trip_id"=>"1", "name"=>"B", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"23", "description"=>"B", "location"=>"B"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "B"], ["description", "B"], ["location", "B"], ["date", "2016-05-23 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:06:33.051401"], ["updated_at", "2016-01-11 04:06:33.051401"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 10.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"trips", :trip_id=>"1"} missing required keys: [:id]):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.7ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:07:14 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wxu21/2SqLrm0AupgftdQhvxrBBs7fJFjZsWbNYkfB1kLrO06Ymm5ibufXQPHzcp0jKuY0kNGUZq2sOCpgRHmg==", "activity"=>{"trip_id"=>"1", "name"=>"B", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"23", "description"=>"B", "location"=>"B"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "B"], ["description", "B"], ["location", "B"], ["date", "2016-05-23 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:07:14.469535"], ["updated_at", "2016-01-11 04:07:14.469535"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 36ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:07:14 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (134.9ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:08:09 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.4ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (3.4ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:08:09 -0500
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:08:15 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.6ms)
+  Rendered activities/new.html.erb within layouts/application (3.9ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:08:29 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YJpbDGW2e5iWOCUZ0kcKLCu4wihe5leYE2t7ZpHnPEHHr15vca11xFYGU8Rco2BH4nvAW3sGvJv0Kq6I4ccHxg==", "activity"=>{"trip_id"=>"1", "name"=>"C", "date(1i)"=>"2016", "date(2i)"=>"5", "date(3i)"=>"20", "description"=>"C", "location"=>"C"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "C"], ["description", "C"], ["location", "C"], ["date", "2016-05-20 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:08:29.169221"], ["updated_at", "2016-01-11 04:08:29.169221"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:08:29 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.0ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.1ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:11:27 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 21ms (ActiveRecord: 1.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (118.4ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:11:29 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.7ms)
+  Rendered activities/new.html.erb within layouts/application (5.6ms)
+  Rendered devise/_login_items.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:11:38 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTWV6Mvkc+exjR2t6hchFa0MmsAIjEjdhQXGiffzWL+WAJCL3/99u3Gza3Bk80t+ZM+Ysy1so95iRBNnh9NjOA==", "activity"=>{"trip_id"=>"1", "name"=>"D", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"D", "location"=>"D"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "D"], ["description", "D"], ["location", "D"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:11:38.204160"], ["updated_at", "2016-01-11 04:11:38.204160"]]
+  [1m[35m (8.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 16ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:11:38 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.4ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:13:56 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.6ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:15:41 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.8ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:15:57 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `activity' for #<Class:0x007ff6dbaa8398>):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.4ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:16:05 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `activities' for #<Class:0x007ff6e1a01f10>):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:16:15 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 19ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.1ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:16:24 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.8ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:16:30 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.2ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:19:49 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 18ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:19:51 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:19:52 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.9ms)
+  Rendered activities/new.html.erb within layouts/application (5.5ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:19:59 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YyevQNSIGue8iXqdMv/8rXUWG7uJVSnnnF2Tkpun8G3EEqojwJMUu3y3DEC8G5bGvNUZyKy1wuR7HEZ864fL6g==", "activity"=>{"trip_id"=>"1", "name"=>"E", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"E", "location"=>"E"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "E"], ["description", "E"], ["location", "E"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:19:59.192709"], ["updated_at", "2016-01-11 04:19:59.192709"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActivity Load (0.1ms)[0m  SELECT  "activities".* FROM "activities" WHERE "activities"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 19ms (ActiveRecord: 9.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Activity with 'id'=):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.3ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:20:38 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YyevQNSIGue8iXqdMv/8rXUWG7uJVSnnnF2Tkpun8G3EEqojwJMUu3y3DEC8G5bGvNUZyKy1wuR7HEZ864fL6g==", "activity"=>{"trip_id"=>"1", "name"=>"E", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"E", "location"=>"E"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "E"], ["description", "E"], ["location", "E"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:20:38.500212"], ["updated_at", "2016-01-11 04:20:38.500212"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 41ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:20:38 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.9ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:21:48 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.9ms)
+  Rendered activities/new.html.erb within layouts/application (5.5ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:21:49 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (2.8ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:21:56 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.9ms)
+  Rendered activities/new.html.erb within layouts/application (4.5ms)
+  Rendered devise/_login_items.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:21:59 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.4ms)
+  Rendered activities/new.html.erb within layouts/application (3.7ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:22:07 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V0JX0UvxZsb1Ptp5s5nZUtOkeDWV0+FWq7RoT0l34Bjwd1KyX+pomjUArKQ9fbM5Gmd6RrAzClVM9b2hOVfbnw==", "activity"=>{"trip_id"=>"1", "name"=>"F", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"F", "location"=>"F"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "F"], ["description", "F"], ["location", "F"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:22:07.771574"], ["updated_at", "2016-01-11 04:22:07.771574"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 14ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:22:07 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.8ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:24:25 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.4ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:25:46 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.6ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:25:56 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `trip' for #<TripsController:0x007ff6e3086bc8>):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.9ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:26:05 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.6ms)
+  [1m[36mTrip Load (1.3ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:28:38 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.9ms)
+  Rendered activities/new.html.erb within layouts/application (5.2ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 33.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:28:39 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mActivity Load (0.3ms)[0m  [1mSELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?[0m  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (4.8ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips" for ::1 at 2016-01-10 23:28:48 -0500
+Processing by TripsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered trips/index.html.erb within layouts/application (2.9ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2016-01-10 23:29:20 -0500
+Processing by TripsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered trips/index.html.erb within layouts/application (7.9ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 33.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:29:20 -0500
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:29:22 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (10.1ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trips/new" for ::1 at 2016-01-10 23:29:25 -0500
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered trips/_trip_form.html.erb (3.1ms)
+  Rendered trips/new.html.erb within layouts/application (4.9ms)
+  Rendered devise/_login_items.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:29:30 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.8ms)
+  Rendered activities/new.html.erb within layouts/application (4.1ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:29:36 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+zVaZGsMgz4qZJIInhYVi408HlP6/pAjGBaC/UN59d9cAF8HfxeNYupa5NUQ8n/gRP8cIN8eeyD/V1cTM1nOWA==", "activity"=>{"trip_id"=>"1", "name"=>"G", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"G", "location"=>"G"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "G"], ["description", "G"], ["location", "G"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:29:36.145665"], ["updated_at", "2016-01-11 04:29:36.145665"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `trip' for #<ActivitiesController:0x007ff6dc91bee8>):
+  app/controllers/activities_controller.rb:19:in `create'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.7ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:31:01 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+zVaZGsMgz4qZJIInhYVi408HlP6/pAjGBaC/UN59d9cAF8HfxeNYupa5NUQ8n/gRP8cIN8eeyD/V1cTM1nOWA==", "activity"=>{"trip_id"=>"1", "name"=>"G", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"G", "location"=>"G"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "G"], ["description", "G"], ["location", "G"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:31:01.113172"], ["updated_at", "2016-01-11 04:31:01.113172"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/id
+Completed 302 Found in 36ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:31:01 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (115.5ms)
+
+
+Started GET "/trips/id" for ::1 at 2016-01-10 23:31:40 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 17ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:32:02 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (4.8ms)
+  Rendered activities/new.html.erb within layouts/application (6.8ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 71.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:34:10 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.3ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (14.5ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 48.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:34:10 -0500
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:34:11 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.0ms)
+  Rendered activities/new.html.erb within layouts/application (4.5ms)
+  Rendered devise/_login_items.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:34:14 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.9ms)
+  Rendered activities/new.html.erb within layouts/application (4.2ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:34:21 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dmsirlqKRnJL8woxS07N6uM4OyNrMEcYE+ju0OCXoubRXifNTpFILovNfOzFqqeBKvs5UE7QrBv0qTs+kLeZYQ==", "activity"=>{"trip_id"=>"1", "name"=>"H", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"H", "location"=>"H"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "H"], ["description", "H"], ["location", "H"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:34:21.373445"], ["updated_at", "2016-01-11 04:34:21.373445"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/trip_id
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:34:21 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.7ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.5ms)
+
+
+Started GET "/trips/trip_id" for ::1 at 2016-01-10 23:35:42 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"trip_id"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 18ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Trip with 'id'=trip_id):
+  app/controllers/trips_controller.rb:24:in `show'
+
+
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.8ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/nadiabarbosa/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.7ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:35:58 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (3.2ms)
+  Rendered activities/new.html.erb within layouts/application (4.8ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:36:02 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (4.0ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-24d62f2323cc19570a9a49e9ff01a43c1ae394f84d44b892b9b30b7e9f772361.css?body=1" for ::1 at 2016-01-10 23:36:02 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-01-10 23:36:02 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-01-10 23:36:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-10 23:36:02 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-10 23:36:03 -0500
+
+
+Started GET "/assets/trips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:36:03 -0500
+
+
+Started GET "/assets/activities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-10 23:36:03 -0500
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:36:07 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.4ms)
+  Rendered activities/new.html.erb within layouts/application (3.7ms)
+  Rendered devise/_login_items.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips/1/activities" for ::1 at 2016-01-10 23:36:13 -0500
+Processing by ActivitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o93QgMpjAPMZH62BaIMKH3LQSX4enF5MbPvFRfhCVqwE6NXj3ngOr9kh21zmZ2B0uxNLDTt8tU+LuhCriGJtKw==", "activity"=>{"trip_id"=>"1", "name"=>"I", "date(1i)"=>"2016", "date(2i)"=>"1", "date(3i)"=>"11", "description"=>"I", "location"=>"I"}, "commit"=>"Create Activity", "trip_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameter: trip_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "activities" ("name", "description", "location", "date", "trip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "I"], ["description", "I"], ["location", "I"], ["date", "2016-01-11 00:00:00.000000"], ["trip_id", 1], ["created_at", "2016-01-11 04:36:13.473655"], ["updated_at", "2016-01-11 04:36:13.473655"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trips/1
+Completed 302 Found in 17ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/trips/1" for ::1 at 2016-01-10 23:36:13 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTrip Load (0.1ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mActivity Load (0.1ms)[0m  SELECT "activities".* FROM "activities" WHERE "activities"."trip_id" = ?  [["trip_id", 1]]
+  Rendered trips/show.html.erb within layouts/application (3.0ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2016-01-10 23:37:47 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.2ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?  [["user_id", 1]]
+  Rendered trips/index.html.erb within layouts/application (2.6ms)
+  Rendered devise/_login_items.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/1/activities/new" for ::1 at 2016-01-10 23:37:59 -0500
+Processing by ActivitiesController#new as HTML
+  Parameters: {"trip_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered activities/_activity_form.html.erb (2.7ms)
+  Rendered activities/new.html.erb within layouts/application (4.1ms)
+  Rendered devise/_login_items.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2016-01-10 23:38:01 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTrip Load (0.1ms)[0m  SELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?  [["user_id", 1]]
+  Rendered trips/index.html.erb within layouts/application (1.7ms)
+  Rendered devise/_login_items.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.2ms)

@@ -7,16 +7,16 @@ class ActivitiesController < ApplicationController
 
   def new
     @trip = Trip.find(params[:trip_id])
-    @activities = Activity.new
+    @activity = Activity.new
   end
 
   def create
     @trip = Trip.find(params[:trip_id])
-    @activity = @activity.build(params[:activity], create_activity_params)
+    @activity = @trip.activities.build(create_activity_params)
 
     if @activity.save
       flash[:notice] = "Activity created!"
-      redirect_to activity_path(:id)
+      redirect_to trip_path(@trip)
     else
       flash.now[:alert] = "An error occurred"
     end
