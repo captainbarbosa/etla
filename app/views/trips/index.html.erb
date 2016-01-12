@@ -2,9 +2,11 @@
   <h1>Your Trips</h1>
 </div>
 
-<%= link_to new_trip_path do %>
-    <i class="glyphicon glyphicon-plus">Add New Trip</i>
-<% end %>
+
+  <%= link_to new_trip_path do %>
+      <i class="glyphicon glyphicon-plus"> <div class = "new_trip">Add New Trip</div></i>
+  <% end %>
+
 
 <ul class="list-group">
   <% activity_count = Activity.group(:trip_id).count %>

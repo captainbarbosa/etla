@@ -57,7 +57,7 @@ nav.navbar.navbar-default{
 }
 
 ul.nav.navbar-nav{
-  padding-top: 17px;
+  padding-top: 30px;
   padding-left: 10px;
   font-size: 22px;
   text-transform: uppercase;
@@ -89,4 +89,35 @@ div.footer{
   text-align: right;
   padding-right: 20px;
 }
+
+
+
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+i.glyphicon.glyphicon-plus{
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  text-align:center;
+  display: inline-block;
+  width: 100%;
+}
+
+div.new_trip{
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+
 
