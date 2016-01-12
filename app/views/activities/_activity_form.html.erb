@@ -18,7 +18,7 @@
     <div>
       <%= f.label :date %>
       <br>
-      <%= date_select(:activity, :date) %>
+      <%= date_select(:activity, :date, order: [:month, :day, :year]) %>
     </div>
 
 
@@ -41,6 +41,6 @@
 
     <br><br>
 
-  <%= submit_tag "Create Activity", :class => "btn btn-large btn-primary" %>
+  <%= submit_tag "Submit", :class => "btn btn-large btn-primary" %>
 <% end %>
 </div>
