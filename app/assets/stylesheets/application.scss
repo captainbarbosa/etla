@@ -10,4 +10,32 @@
     text-align:center;
 }
 
+.jumbotron{
+  height: 375px;
+  background-image: url("fallsjokull_pano.jpg");
+  background-size: cover; 
+}
 
+.jumbotron h1{
+  font-size: 100px;
+}
+
+.jumbotron p{
+  font-size: 40px;
+}
+
+.jumbotron a li {
+  font-size: 30px;
+
+}
+
+.alert, .notice{
+  padding: 15px;
+  border: none;
+  margin: 0;
+
+}
+
+nav{
+  margin-bottom: 0;
+}
