@@ -1,16 +1,33 @@
 <%= form_for @trip do |f| %>
+<div class = "form_style">
   <fieldset>
     <div>
       <%= f.label :name %>
+      <br>
       <%= f.text_field :name %>
     </div>
+
+    <br><br>
+
     <div>
-      <%= date_select(:trip, :start) %>
+      <%= f.label :start %>
+      <br>
+      <%= date_select(:trip, :start, order: [:month, :day, :year]) %>
     </div>
+
+    <br>
+    <br>
+
     <div>
-      <%= date_select(:trip, :end) %>
+      <%= f.label :end %>
+      <br>
+      <%= date_select(:trip, :end, order: [:month, :day, :year]) %>
     </div>
+
   </fieldset>
 
-  <%= submit_tag("Edit Trip") %>
+    <br><br>
+
+  <%= submit_tag "Edit Trip", :class => "btn btn-large btn-primary" %>
 <% end %>
+</div>
