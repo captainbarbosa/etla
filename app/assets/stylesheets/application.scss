@@ -5,6 +5,11 @@
 *= require bootstrap-datepicker3
 */
 
+.navbar-brand{
+  padding: 0;
+  height: 0;
+}
+
 .centered
 {
     text-align:center;
@@ -36,6 +41,24 @@
 
 }
 
+a.welcome{
+  font-size: 70px;
+}
+
 nav{
   margin-bottom: 0;
 }
+
+nav.navbar.navbar-default{
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+ul.nav.navbar-nav{
+  padding-top: 17px;
+  padding-left: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+label {color: pink;}

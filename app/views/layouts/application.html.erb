@@ -10,10 +10,9 @@
 <body>
   <nav class="navbar navbar-default">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Etla</a>
+      <a class="navbar-brand"><h1><%= link_to image_tag("linecons-globe3x.png", size: "40"), welcome_path %></h1></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Trips", trips_path(@trip) %></li>
 
       <% if user_signed_in? %>
