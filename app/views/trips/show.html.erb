@@ -1,26 +1,35 @@
-<h1 style="color: red"><strong>trips#show</strong></h1>
-<br>
-
-<%= link_to "Back to trips", trips_path %>
-<br>
-<%= link_to "Add New Trip", new_trip_path %>
+<nav>
+  <ul class="pager">
+    <%= link_to trips_path do %>
+      <li class="previous"><span aria-hidden="true">&larr; Back to Trips</span></li>
+    <% end %>
+  </ul>
+</nav>
 
 <h1> <%= @trip.name %> </h1>
 
-<h2> Your activities: </h2>
+<div class="page-header">
+  <h2>Your Activities</h2>
+</div>
 
-<%= link_to "Add New Activity", new_trip_activity_path(@trip) %>
-
-<table border="1">
-<th>Name</th><th>Date</th><th>Description</th><th>Location</th><th>Edit/Delete</th>
-<% @trip.activities.each do |activity| %>
-  <tr>
-    <td> <%= activity.name %> </td>
-    <td> <%= activity.date %> </td>
-    <td> <%= activity.description %> </td>
-    <td> <%= activity.location %> </td>
-    <td> <%= link_to "Delete", [@trip, activity], :method  => :delete %> - 
-    <%= link_to "Edit", edit_trip_activity_path(@trip, activity) %></td>
-  </tr>
+<button type="button" class="btn btn-default">
+  <%= link_to new_trip_activity_path(@trip) do %>
+  <i class="glyphicon glyphicon-plus"> Add New Activity</i>
 <% end %>
-</table>
+</button>
+
+<br><br>
+
+<% @trip.activities.each do |activity| %>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">
+      <%= link_to [@trip, activity], :method  => :delete do %>
+      <i class="glyphicon glyphicon-trash"></i> Delete
+      <% end %>
+
+      <h3 class="list-group-item-heading"><%= activity.name %> </h3>
+      <h4 class="list-group-item-heading"><%= activity.date.strftime("%A") %>, <%= activity.date.strftime("%B") %> <%= activity.date.strftime("%y") %>  &bull;  <%= activity.location %></h4>
+      <p class="list-group-item-text"><%= activity.description %></p>
+    </a>
+  </div>
+<% end %>
