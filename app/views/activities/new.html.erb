@@ -1,7 +1,10 @@
-<h1 style="color: red"><strong>activities#new</strong></h1>
-<br>
-
-<%= link_to "Back to trips", trips_path %>
+<nav>
+  <ul class="pager">
+    <%= link_to trip_path(@trip) do %>
+      <li class="previous"><span aria-hidden="true">&larr; Back to Activities</span></li>
+    <% end %>
+  </ul>
+</nav>
 
 <h1>Create new activity</h1>
 

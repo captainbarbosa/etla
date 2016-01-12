@@ -68,7 +68,6 @@ ul.nav.navbar-nav{
   color: black;
 }
 
-label {color: pink;}
 
 li.btn.btn-large.btn-primary{
   background-color: rgba(102, 102, 131, 0.54);
@@ -176,7 +175,7 @@ button.btn.btn-default{
 }
 
 .btn .badge{
-  background-color: #756f8f;
+  background-color: #b9b4b1;
 }
 
 
@@ -201,4 +200,61 @@ div.activity_location{
 div.activity_description{
   font-size: 16px;
   text-transform: none;
+}
+
+
+
+
+
+label {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+
+}
+
+div.create_activity_form{
+  margin-left: 455px;
+  margin-top: 50px;
+}
+
+input#activity_name{
+  width: 50%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+textarea#activity_description{
+  width: 50%;
+  border-color: #BFBFBF;
+  border-width: 0.5px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+input#activity_location{
+  width: 50%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+input.btn.btn-large.btn-primary{
+  background-color: rgba(102, 102, 131, 0.54);
+  border-color: rgba(88, 89, 112, 0.67);
+  padding-right: 20px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
 }

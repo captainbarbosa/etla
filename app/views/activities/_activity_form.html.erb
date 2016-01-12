@@ -1,24 +1,46 @@
 <%= form_for [@trip, @activity] do |f| %>
+<div class = "create_activity_form">
   <fieldset>
     <div>
       <%= f.hidden_field :trip_id , :value=>params[:trip_id] %>
     </div>
+
+    <br><br>
+
     <div>
       <%= f.label :name %>
+      <br>
       <%= f.text_field :name %>
     </div>
+
+    <br><br>
+
     <div>
+      <%= f.label :date %>
+      <br>
       <%= date_select(:activity, :date) %>
     </div>
+
+
+    <br><br>
+
     <div>
       <%= f.label :description %>
+      <br>
       <%= f.text_area :description %>
     </div>
+
+    <br><br>
+
     <div>
       <%= f.label :location %>
+      <br>
       <%= f.text_field :location %>
     </div>
   </fieldset>
 
-  <%= submit_tag("Create Activity") %>
+    <br><br>
+
+  <%= submit_tag "Create Activity", :class => "btn btn-large btn-primary" %>
 <% end %>
+</div>
