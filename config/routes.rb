@@ -17,7 +17,10 @@ Rails.application.routes.draw do
     resources :activities
   end
 
+  resources :pages
+
   get 'welcome/', to: 'welcome#index'
+
 
   # Example resource route with options:
   #   resources :products do
