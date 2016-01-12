@@ -28,13 +28,14 @@ class ActivitiesController < ApplicationController
 
   def edit
     @activity = Activity.find(params[:id])
+    @trip = current_user.trips.find(params[:trip_id])
   end
 
   def update
     @activity = Activity.find(params[:id])
 
     if @activity.update(create_activity_params)
-      redirect_to @activity, :notice => "Activity edited"
+      redirect_to trip_path(@activity), :notice => "Activity edited"
     else
       render 'edit'
     end
