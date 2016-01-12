@@ -32,7 +32,7 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
 
     if @trip.update(create_trip_params)
-      redirect_to @trip, :notice => "Trip edited"
+      redirect_to @trip, flash[:notice] => "Trip edited"
     else
       render 'edit'
     end

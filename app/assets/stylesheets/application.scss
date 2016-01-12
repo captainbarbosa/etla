@@ -68,6 +68,10 @@ ul.nav.navbar-nav{
   color: black;
 }
 
+li{
+  list-style-type: none;
+}
+
 
 li.btn.btn-large.btn-primary{
   background-color: rgba(102, 102, 131, 0.54);
@@ -310,4 +314,16 @@ text-transform: uppercase;
 font-family: 'Roboto', sans-serif;
 font-weight: 300;
 letter-spacing: 1px;
+}
+
+
+
+
+div.alert.alert-warning{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
 }
