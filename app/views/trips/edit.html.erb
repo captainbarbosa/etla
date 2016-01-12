@@ -1,5 +1,11 @@
 <h1>Update Trip</h1>
 
-<%= render 'trip_form' %>
+<nav>
+  <ul class="pager">
+    <%= link_to trips_path do %>
+      <li class="previous"><span aria-hidden="true">&larr; Back to Trips</span></li>
+    <% end %>
+  </ul>
+</nav>
 
-<%= link_to "Cancel", trip_path(@trip) %>
+<%= render 'trip_form' %>

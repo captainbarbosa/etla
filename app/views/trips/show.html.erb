@@ -37,11 +37,17 @@
 
             <br><br>
 
+            <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-default">
                 <%= link_to [@trip, activity], :method  => :delete do %>
       <i class="glyphicon glyphicon-trash"></i> Delete
       <% end %>
-             
+              </button>
+
+              <button type="button" class="btn btn-default">
+                <%= link_to edit_trip_activity_path(@trip, activity) do %>
+                <i class="glyphicon glyphicon-pencil"></i> Edit
+              <% end %>
               </button>
 
             </div>

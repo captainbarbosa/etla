@@ -1,8 +1,14 @@
-<h1 style="color: red"><strong>activities#edit</strong></h1>
-<br>
-
 <h1>Update Activity</h1>
 
+<nav>
+  <ul class="pager">
+    <%= link_to trip_path do %>
+      <li class="previous"><span aria-hidden="true">&larr; Back to Activities</span></li>
+    <% end %>
+  </ul>
+</nav>
+
+<%= render 'activity_form' %>
 
 
-<%= link_to "Cancel", trip_path %>
+

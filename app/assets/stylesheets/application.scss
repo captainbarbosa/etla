@@ -275,3 +275,19 @@ input#trip_name{
   font-weight: 300;
   letter-spacing: 1.5px;
 }
+
+
+form#new_user.new_user{
+  margin-left: 455px;
+  margin-top: 50px;
+
+}
+
+input#user_email, input#user_password, input#user_password_confirmation{
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}

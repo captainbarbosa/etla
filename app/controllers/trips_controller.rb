@@ -6,7 +6,7 @@ class TripsController < ApplicationController
   end
 
   def new
-    @trips = Trip.new
+    @trip = current_user.trips.build
   end
 
   def create
@@ -14,7 +14,7 @@ class TripsController < ApplicationController
 
     if @trip.save
       flash[:notice] = "Trip created!"
-      redirect_to trip_path(:id)
+      redirect_to trip_path(@trip)
     else
       flash.now[:alert] = "An error occurred"
     end
