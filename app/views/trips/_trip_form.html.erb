@@ -5,10 +5,11 @@
       <%= f.text_field :name %>
     </div>
     <div>
-      <%= date_select(:trip, :start, order: [:day, :month, :year]) %>
+      <%= date_select(:trip, :start) %>
+      <input type="text" data-provide='datepicker' >
     </div>
     <div>
-      <%= date_select(:trip, :end, order: [:day, :month, :year]) %>
+      <%= date_select(:trip, :end) %>
     </div>
   </fieldset>
 
