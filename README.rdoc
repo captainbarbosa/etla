@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Etla
 
-Things you may want to cover:
+###A rails app for planning trips
 
-* Ruby version
+You can currently add, edit, and delete the following:
+* Trips
+  * Name
+  * Start Date
+  * End Date
 
-* System dependencies
+* Activities
+  * Date
+  * Name
+  * Description
+  * Location
 
-* Configuration
+#### Outstanding things to add:
+- [ ] Reroute page upon sign up to to go trips page instead of landing page
+- [ ] Edit user profile
+- [ ] Add user name to top right header upon login
+- [ ] Geocoding for location entries with map view
+- [ ] Add collaborators on a trip
+- [ ] Limit the ability to add an activity time based on trip time parameters
+- [ ] Add confirm popups to edit/delete actions
+- [ ] Add datepicker
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This is my first rails project. If you have any feedback, please let me know!
